@@ -11,6 +11,13 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<http:listener doc:name="Listener" doc:id="b68ea5fb-ff28-4349-b4ff-3fa4ebe03cb9" config-ref="HTTP_Listener_config" path="/munit"/>
 		<logger level="INFO" doc:name="Logger" doc:id="24b10647-b198-4922-b39d-45dadb75baa6" message="logger1"/>
 		<logger level="INFO" doc:name="Logger" doc:id="2c46bd5d-9412-42a8-bdd1-ca33dc2b68f2" message="logger2"/>
+		<flow-ref doc:name="Flow Reference" doc:id="4be7bb67-f675-4b21-8064-5ea797f059cb" name="munitSub_Flow"/>
 		<logger level="INFO" doc:name="Logger" doc:id="405fcc1c-1bd1-453e-8d63-6b5788d3f17d" message="logger3"/>
 	</flow>
+	<sub-flow name="munitSub_Flow" doc:id="bc365908-2941-4a9d-ad03-0830120b2fed" >
+		<logger level="INFO" doc:name="Logger" doc:id="f61582ad-93c3-43a8-a04f-bedc13b3b492" message="hai"/>
+		<logger level="INFO" doc:name="Logger" doc:id="d55ccbc6-9942-4239-beee-fc324b72d152" message="how "/>
+		<logger level="INFO" doc:name="Logger" doc:id="db14c318-b8f6-4be5-b3e9-d6c256303629" message="are you"/>
+	</sub-flow>
+
 </mule>
